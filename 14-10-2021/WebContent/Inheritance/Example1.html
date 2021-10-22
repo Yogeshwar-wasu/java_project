@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inheritance</title>
+</head>
+<body>
+  <script type="text/javascript">
+    class Today extends Date
+    {
+    	constructor()
+    	{
+    		super();
+    	}
+    }
+    var m = new Today();
+    document.write("Current date:")
+    document.write(m.getDate()+"-"+(m.getMonth()+1)+"-"+m.getFullYear());
+  </script>
+</body>
+</html>

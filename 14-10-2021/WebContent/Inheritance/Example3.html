@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inheritance</title>
+</head>
+<body>
+  <script type="text/javascript">
+    class Bike
+     {
+    	construc999tor()
+    	{
+    		this.company="Honda";
+    	}
+     }
+     class Vehicle extends Bike
+     {
+    	 constructor(name,price)
+    	 {
+    		 super();
+    		 this.name=name;
+    		 this.price=price;
+    	 }
+     }
+      var v = new Vehicle("Shine","50000");
+      
+      document.write(v.company+" "+v.name+" "+v.price);
+      
+  </script>
+</body>
+</html>

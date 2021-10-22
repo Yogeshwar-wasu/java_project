@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>static methods</title>
+</head>
+
+<body>
+	
+	<script type="text/javascript">
+	
+	class Employee
+	{
+		
+		//non-static method
+		getEmployeeDetails()
+		{
+			document.write(Employee.getInfo()+"<br>");
+		}
+		
+		//static method
+		static getInfo()
+		{
+			return "Hi static method";
+		}		
+		
+	}
+	
+	var emp1 = new Employee();
+	
+	emp1.getEmployeeDetails();
+	
+	
+	</script>
+	
+</body>
+
+</html>

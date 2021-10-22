@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Abstraction</title>
+</head>
+<body>
+  <script>
+     function Vehicle()
+     {
+    	 this.vehicleName= vehicleName;
+    	 throw new Error("you cannot create an instance of Abstract Class");
+     }
+       Vehicle.prototype.display = function()
+       {
+    	   return this.vehicleName;
+       }
+       var vehicle= new Vehicle();
+  </script>
+</body>
+</html>

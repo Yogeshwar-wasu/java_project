@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>static methods</title>
+</head>
+
+<body>
+	
+	<script type="text/javascript">
+	
+	class Employee
+	{
+		//constructor
+		constructor()
+		{
+				document.write(Employee.getInfo());
+				
+				document.write("<hr>");
+				
+				document.write(this.constructor.getInfo());
+		}
+		
+		//static methods
+		static getInfo()
+		{
+			return "Hi static method 1...!";
+		}
+		
+	}
+	
+	var emp = new Employee();
+	
+	</script>
+	
+</body>
+
+</html>

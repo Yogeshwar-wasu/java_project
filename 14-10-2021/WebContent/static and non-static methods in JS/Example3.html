@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>static methods</title>
+</head>
+
+<body>
+	
+	<script type="text/javascript">
+	
+	
+	class Employee
+	{
+		/*
+				If we declare more than one static method with a similar name, the JavaScript
+				always invokes the last one. 
+		*/
+		//static methods
+		static getInfo()
+		{
+			document.write("Hi static method1...!");
+		}	
+		static getInfo()
+		{
+			document.write("Hi static method2....!");
+		}	
+		
+	}
+	
+	Employee.getInfo();
+	
+	</script>
+	
+</body>
+
+</html>

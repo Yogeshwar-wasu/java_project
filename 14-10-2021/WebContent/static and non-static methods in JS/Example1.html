@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>static methods</title>
+</head>
+
+<body>
+	
+	<script type="text/javascript">
+	
+	class Employee
+	{
+		
+		//constructor
+		constructor(id, name)
+		{
+			this.EmployeeId = id;
+			this.EmployeeName = name;
+		}
+		
+		//non-static method
+		getEmployeeDetails()
+		{
+			document.write(this.EmployeeId+"  "+this.EmployeeName+"<br>");
+		}
+		
+		//static method
+		static getInfo()
+		{
+			document.write("Hi static method");
+		}
+		
+		
+	}
+	
+	//create an object for Employee class and call it's method
+	var emp1 = new Employee(3030, "Ajay Kumar");
+	
+	emp1.getEmployeeDetails();
+	
+	document.write("<hr>");
+	
+	//to call static methods not required object/object creation
+	//by using class name
+	Employee.getInfo();
+	
+	</script>
+	
+</body>
+
+</html>
